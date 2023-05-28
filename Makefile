@@ -1,6 +1,5 @@
 parser: parser.cpp
-	g++ main.o parser.o -o parser -std=c++11
-parser.o: parser.cpp
-	g++ -c parser.cpp -std=c++11
+	g++ -std=c++11 -o parser parser.cpp
+
 clean:
-    rm -f parser
+	m -f parser
